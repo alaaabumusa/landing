@@ -5,6 +5,11 @@ body {
     background-color: #eee;
 }
 
+.menu{
+    color: var(--mainColor);
+    display: none;
+}
+
 .header {
     background-color: #fff;
     padding: 20px 0;
@@ -13,6 +18,7 @@ body {
 .header .logo {
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
 }
@@ -27,6 +33,7 @@ body {
 
 .nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -40,6 +47,7 @@ body {
 
 .auth {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
 }
@@ -62,3 +70,109 @@ body {
     background-color: var(--mainColor);
     color: #fff;
 }
+
+@media screen and ( max-width:992px ){
+    .nav,
+    .auth
+    {
+        display: none;
+    }
+    .menu{
+        display: block;
+      
+    }  
+}
+
+@media screen and ( max-width:567px ){
+    .container{
+        width:calc(100% - 30.8px); 
+    }
+    .header .logo img{
+        width: 20px;
+    }
+    .header .logo a{
+        font-size: 14px;
+    }
+
+}
+.footer{
+    background-color:#393E46;
+    color: #fff;
+    padding: 50px 0;
+}
+.footer a{
+    color: #fff;   
+}
+.footer-left-side{ 
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-left-side .logo{
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-left-side .logo img {
+    width: 35px;
+}
+.footer-left-side .icons img{
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.footer-right-side{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer-right-side nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-right-side .footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+@media screen and ( max-width:1200px ){
+    .footer .row{
+        gap: 10px;
+    }
+    .footer-left-side{
+        width: 100%;
+    }
+    .footer-right-side{
+        width: 100%;
+    }
+
+}
+@media screen and ( max-width:768px ){
+    .footer{
+        background-color: aquamarine;
+    }
+    .footer-item{
+    width: 50%; 
+    margin-bottom: 20px;
+    }
+
+}
+@media screen and ( max-width:400px ){
+ 
+    .footer-item{
+    width: 100%; 
+   
+    }
+
+}
+
+
