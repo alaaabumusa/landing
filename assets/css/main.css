@@ -189,7 +189,11 @@ margin-bottom: -8px;
 
 .WHAT_WE_GIVE {
     background-color: white;
-    padding: 10px;
+    padding: 40px;
+    
+}
+.WHAT_WE_GIVE .container{
+    position: relative; 
 }
 
 .info-section,
@@ -234,6 +238,7 @@ margin-bottom: -8px;
     color: white;
     border-radius: 4.12px;
     padding: 10px;
+    position: relative;
 }
 
 .card img {
@@ -251,7 +256,18 @@ margin-bottom: -8px;
     font-size: 16PX;
 
 }
+.arrow {
+    position: absolute;
+    bottom:-36px;
+    right: 105px;
+    display: flex;
+  
+}
 
+.arrow img {
+    width: 30px;
+    margin: 0 5px;
+}
 @media screen and (max-width: 1184px) {
 
     .info-section,
